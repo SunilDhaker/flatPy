@@ -16,6 +16,8 @@ urlpatterns = patterns('',
     url(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework')),
     url(r'^client/' , include('clientmodels.urls')),
     url(r'^api-token-auth/', 'rest_framework.authtoken.views.obtain_auth_token'),
+    url(r'^login/' , views.login),
+    url(r'^register/' , views.register),
 )
 
 
