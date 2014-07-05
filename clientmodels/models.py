@@ -4,13 +4,12 @@ from datetime import datetime
 
 
 class Venders(models.Model):
-	name = models.CharField(max_length=50)
-	vender_type = models.CharField(max_length=50)
-	location = models.CharField(max_length=50)
-	is_verified = models.BooleanField() 
-	# avatar = models.ImageField(upload_to='/images/')
+	brand = models.CharField(max_length=50)
+	place = models.CharField(max_length=50) 
+	image = models.ImageField(upload_to='images' , default='images/2.jpg')
 	def __unicode__(self):
-		return self.name
+		return self.branch
+
 
 
 class Bill(models.Model):

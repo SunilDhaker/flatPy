@@ -41,7 +41,8 @@ INSTALLED_APPS = (
     'account',
     'rest_framework.authtoken',
     'rest_framework',
-    'clientmodels',    
+    'clientmodels', 
+    'south',   
 )
 
 MIDDLEWARE_CLASSES = (
